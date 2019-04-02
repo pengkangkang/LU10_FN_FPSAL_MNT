@@ -1,0 +1,11 @@
+#数据源配置
+spring:
+  datasource:
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=99.12.130.95))))
+    username: lst
+    password: 123456
+  jpa:
+    show-sql:false
+#sql方言
+    database-platform: org.hibernate.dialect.OracleDialect
